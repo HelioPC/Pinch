@@ -61,6 +61,24 @@ struct ContentView: View {
                                 }
                             }
                     )
+//                MARK: - 3. MAGNIFICATION
+                    .gesture(
+                        MagnifyGesture()
+                            .onChanged { value in
+                                if imageScale >= 1 && imageScale <= 5 {
+                                    imageScale = value.magnification
+                                } else if imageScale > 5 {
+                                    imageScale = 5
+                                }
+                            }
+                            .onEnded { _ in
+                                if imageScale > 5 {
+                                    imageScale = 5
+                                } else if imageScale <= 1 {
+                                    resetImageState()
+                                }
+                            }
+                    )
             }
             .navigationTitle("Pinch and zoom")
             .navigationBarTitleDisplayMode(.inline)
