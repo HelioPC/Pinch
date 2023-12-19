@@ -14,6 +14,9 @@ struct ContentView: View {
     @State private var imageOffset: CGSize = .zero
     @State private var isDrawerOpen: Bool = false
     
+    let pages: [Page] = pagesData
+    @State private var pageIndex: Int = 0
+    
 //    MARK: - FUNCTIONS
     
     func resetImageState() {
@@ -29,7 +32,7 @@ struct ContentView: View {
             ZStack {
                 Color.clear
                 
-                Image("magazine-front-cover")
+                Image(pages[pageIndex].name)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .clipShape(.rect(cornerRadius: 10))
@@ -154,6 +157,22 @@ struct ContentView: View {
                         })
                     
 //                  MARK: - DRAWER THUMBNAILS
+                    
+                    ForEach(pages) { item in
+                        Image(item.thumbnailName)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 80)
+                            .clipShape(.rect(cornerRadius: 8))
+                            .shadow(radius: 4)
+                            .opacity(isDrawerOpen ? 1 : 0)
+                            .animation(.easeOut(duration: 1), value: isDrawerOpen)
+                            .onTapGesture(perform: {
+                                isAnimating = true
+                                pageIndex = item.id
+                            })
+                    }
+                    
                     Spacer()
                 }
                 .padding(EdgeInsets(top: 16, leading: 8, bottom: 16, trailing: 8))

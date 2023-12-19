@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772D5E5A2B3143050007C345 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772D5E592B3143050007C345 /* PageModel.swift */; };
+		772D5E5C2B3144800007C345 /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772D5E5B2B3144800007C345 /* PageData.swift */; };
 		777EE5652B2BDBF400FCE502 /* PinchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EE5642B2BDBF400FCE502 /* PinchApp.swift */; };
 		777EE5672B2BDBF400FCE502 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777EE5662B2BDBF400FCE502 /* ContentView.swift */; };
 		777EE5692B2BDBF400FCE502 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 777EE5682B2BDBF400FCE502 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		772D5E592B3143050007C345 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		772D5E5B2B3144800007C345 /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
 		777EE5612B2BDBF400FCE502 /* Pinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		777EE5642B2BDBF400FCE502 /* PinchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchApp.swift; sourceTree = "<group>"; };
 		777EE5662B2BDBF400FCE502 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 		777EE5742B2BDFA400FCE502 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				772D5E592B3143050007C345 /* PageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 		777EE5752B2BDFA900FCE502 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				772D5E5B2B3144800007C345 /* PageData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -176,8 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7785B54B2B30016500131093 /* ImageControlView.swift in Sources */,
+				772D5E5A2B3143050007C345 /* PageModel.swift in Sources */,
 				777EE5672B2BDBF400FCE502 /* ContentView.swift in Sources */,
 				777EE5652B2BDBF400FCE502 /* PinchApp.swift in Sources */,
+				772D5E5C2B3144800007C345 /* PageData.swift in Sources */,
 				77CBC6092B2D1FF1006A3DB7 /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
