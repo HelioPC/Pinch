@@ -114,6 +114,14 @@ Open the project with Xcode
 ## Usage
 
 
+https://github.com/HelioPC/Pinch/assets/59577079/6cdcb32b-b11f-473f-8a4a-b8c1de1e60d1
+
+
+
+https://github.com/HelioPC/Pinch/assets/59577079/0fd1894d-dee8-4d48-8fd4-0e319de04e58
+
+
+
 _For more examples, please refer to the [Documentation](#acknowledgments)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
